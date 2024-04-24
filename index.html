@@ -1,46 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="style2.css">
-  </head>
-  <body>
-    <h2>My Friends</h2>
+<html lang="en">
 
-    <div class="grid-container">
-      <div class="header">
-     
-       <a href="" class="logo"><strong>CompanyLogo</strong></a>
-          <a href="#">Home</a>
-          <a href="">Contact</a>
-          <a href="">About</a>
-       
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="date">
+      <p id="date">Date: </p>
+    </div>
+    <div class="day-name">
+      <p class="day" id="day">DD/MM/YYYY at HH:MM</p>
+    </div>
+    <br>
+    <div class="dices">
+      <div class="dice">
+        <img id="img1" src="dice-1.svg" alt="dice">
+        <p class="dice-label">Dice 1</p>
       </div>
-      <div class="hover">
-        <div class="left">
-        <img
-          src="https://www.w3schools.com/w3images/avatar1.png"
-          alt="Avatar" style="width: 280px; height: 280px"
-        />
-        </div>
-       <div class="middle">
-        <img
-          src="https://www.w3schools.com/w3images/avatar2.png"
-          alt="Avatar"
-          style="width: 280px; height: 280px"
-        />
-        </div>
-        <div class="right">
-        <img
-          src="https://www.w3schools.com/w3images/avatar3.png"
-          alt="Avatar"
-          style="width: 280px; height: 280px"
-        />
-       </div>
-      </div>
-      <div class="footer">
-        <h1>Footer</h1>
+      <div class="dice">
+        <img src="dice-2.svg" alt="dice" class="img2">
+        <p class="dice-label">Dice 2</p>
       </div>
     </div>
-  </body>
+    <br>
+      <button id="btn" onclick="rollTheDice()">Roll Dice</button>
+      <br>
+      <div class="message">
+        Total: <span id="total" class="total1">2</span>
+        <br>
+        more than 8: <span id="more-than-10">Win</span>
+        <br>
+        less than 8: <span id="less-than-10">Lose</span>
+        <br>
+        <br>
+        <h3 class="result">You didn't win: Try Again!</h1>
+      </div>
+      </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
